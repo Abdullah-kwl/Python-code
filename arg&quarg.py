@@ -1,6 +1,6 @@
 
 
-def adding(*args):
+def fun(*args,**kwargs):
     
     sum=0
 
@@ -10,7 +10,8 @@ def adding(*args):
         
     print(f"Your sum is : {sum}")
 
+    print(kwargs)
 
 li=[5,6,4]
 
-adding(*li)
+fun(*li,l=5,w=8)
